@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/china.js"></script>
+
+</head>
+<body>
+    <div id="843e9d47e7034a788cdf866827e4cb26" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_843e9d47e7034a788cdf866827e4cb26 = echarts.init(
+            document.getElementById('843e9d47e7034a788cdf866827e4cb26'), 'white', {renderer: 'canvas'});
+        var option_843e9d47e7034a788cdf866827e4cb26 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#B22222",
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "effectScatter",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Chongqing",
+                    "value": [
+                        106.55,
+                        29.57,
+                        4.97
+                    ]
+                },
+                {
+                    "name": "Chengdu",
+                    "value": [
+                        104.07,
+                        30.67,
+                        2.57
+                    ]
+                },
+                {
+                    "name": "Shenzhen",
+                    "value": [
+                        114.05,
+                        22.55,
+                        3.02
+                    ]
+                },
+                {
+                    "name": "Beijing",
+                    "value": [
+                        116.4,
+                        39.9,
+                        5.5
+                    ]
+                },
+                {
+                    "name": "Guangzhou",
+                    "value": [
+                        113.27,
+                        23.13,
+                        3.22
+                    ]
+                },
+                {
+                    "name": "Shanghai",
+                    "value": [
+                        121.47,
+                        31.23,
+                        4.09
+                    ]
+                },
+                {
+                    "name": "Xinyang",
+                    "value": [
+                        114.04,
+                        32.07,
+                        5.0
+                    ]
+                },
+                {
+                    "name": "Changsha",
+                    "value": [
+                        112.93,
+                        28.23,
+                        5.21
+                    ]
+                },
+                {
+                    "name": "Zhengzhou",
+                    "value": [
+                        113.62,
+                        34.75,
+                        3.04
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "effectScatter",
+            "coordinateSystem": "geo",
+            "showEffectOn": "render",
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            },
+            "symbolSize": 12,
+            "data": [
+                {
+                    "name": "Wuhan",
+                    "value": [
+                        114.31,
+                        30.52,
+                        100
+                    ]
+                }
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "lines",
+            "name": "Main Spread Path",
+            "coordinateSystem": "geo",
+            "zlevel": 4,
+            "progressive": 400,
+            "progressiveThreshold": 3000,
+            "effect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 50,
+                "color": "red",
+                "symbol": "arrow",
+                "symbolSize": 5
+            },
+            "symbol": [
+                "none",
+                "arrow"
+            ],
+            "polyline": false,
+            "large": false,
+            "largeThreshold": 2000,
+            "symbolSize": 3,
+            "data": [
+                {
+                    "name": "Wuhan->Shenzhen",
+                    "coords": [
+                        [
+                            114.31,
+                            30.52
+                        ],
+                        [
+                            114.05,
+                            22.55
+                        ]
+                    ]
+                },
+                {
+                    "name": "Guangzhou->Shenzhen",
+                    "coords": [
+                        [
+                            113.27,
+                            23.13
+                        ],
+                        [
+                            114.05,
+                            22.55
+                        ]
+                    ]
+                },
+                {
+                    "name": "Beijing->Shenzhen",
+                    "coords": [
+                        [
+                            116.4,
+                            39.9
+                        ],
+                        [
+                            114.05,
+                            22.55
+                        ]
+                    ]
+                },
+                {
+                    "name": "Chengdu->Shenzhen",
+                    "coords": [
+                        [
+                            104.07,
+                            30.67
+                        ],
+                        [
+                            114.05,
+                            22.55
+                        ]
+                    ]
+                },
+                {
+                    "name": "Shanghai->Shenzhen",
+                    "coords": [
+                        [
+                            121.47,
+                            31.23
+                        ],
+                        [
+                            114.05,
+                            22.55
+                        ]
+                    ]
+                },
+                {
+                    "name": "Wuhan->Guangzhou",
+                    "coords": [
+                        [
+                            114.31,
+                            30.52
+                        ],
+                        [
+                            113.27,
+                            23.13
+                        ]
+                    ]
+                },
+                {
+                    "name": "Beijing->Guangzhou",
+                    "coords": [
+                        [
+                            116.4,
+                            39.9
+                        ],
+                        [
+                            113.27,
+                            23.13
+                        ]
+                    ]
+                },
+                {
+                    "name": "Chongqing->Guangzhou",
+                    "coords": [
+                        [
+                            106.55,
+                            29.57
+                        ],
+                        [
+                            113.27,
+                            23.13
+                        ]
+                    ]
+                },
+                {
+                    "name": "Changsha->Guangzhou",
+                    "coords": [
+                        [
+                            112.93,
+                            28.23
+                        ],
+                        [
+                            113.27,
+                            23.13
+                        ]
+                    ]
+                },
+                {
+                    "name": "Xinyang->Guangzhou",
+                    "coords": [
+                        [
+                            114.04,
+                            32.07
+                        ],
+                        [
+                            113.27,
+                            23.13
+                        ]
+                    ]
+                },
+                {
+                    "name": "Wuhan->Beijing",
+                    "coords": [
+                        [
+                            114.31,
+                            30.52
+                        ],
+                        [
+                            116.4,
+                            39.9
+                        ]
+                    ]
+                },
+                {
+                    "name": "Chengdu->Beijing",
+                    "coords": [
+                        [
+                            104.07,
+                            30.67
+                        ],
+                        [
+                            116.4,
+                            39.9
+                        ]
+                    ]
+                },
+                {
+                    "name": "Zhengzhou->Beijing",
+                    "coords": [
+                        [
+                            113.62,
+                            34.75
+                        ],
+                        [
+                            116.4,
+                            39.9
+                        ]
+                    ]
+                },
+                {
+                    "name": "Chongqing->Beijing",
+                    "coords": [
+                        [
+                            106.55,
+                            29.57
+                        ],
+                        [
+                            116.4,
+                            39.9
+                        ]
+                    ]
+                },
+                {
+                    "name": "Changsha->Beijing",
+                    "coords": [
+                        [
+                            112.93,
+                            28.23
+                        ],
+                        [
+                            116.4,
+                            39.9
+                        ]
+                    ]
+                },
+                {
+                    "name": "Xinyang->Beijing",
+                    "coords": [
+                        [
+                            114.04,
+                            32.07
+                        ],
+                        [
+                            116.4,
+                            39.9
+                        ]
+                    ]
+                },
+                {
+                    "name": "Zhengzhou->Chengdu",
+                    "coords": [
+                        [
+                            113.62,
+                            34.75
+                        ],
+                        [
+                            104.07,
+                            30.67
+                        ]
+                    ]
+                },
+                {
+                    "name": "Chongqing->Chengdu",
+                    "coords": [
+                        [
+                            106.55,
+                            29.57
+                        ],
+                        [
+                            104.07,
+                            30.67
+                        ]
+                    ]
+                },
+                {
+                    "name": "Changsha->Chengdu",
+                    "coords": [
+                        [
+                            112.93,
+                            28.23
+                        ],
+                        [
+                            104.07,
+                            30.67
+                        ]
+                    ]
+                },
+                {
+                    "name": "Xinyang->Chengdu",
+                    "coords": [
+                        [
+                            114.04,
+                            32.07
+                        ],
+                        [
+                            104.07,
+                            30.67
+                        ]
+                    ]
+                },
+                {
+                    "name": "Beijing->Shanghai",
+                    "coords": [
+                        [
+                            116.4,
+                            39.9
+                        ],
+                        [
+                            121.47,
+                            31.23
+                        ]
+                    ]
+                },
+                {
+                    "name": "Chengdu->Shanghai",
+                    "coords": [
+                        [
+                            104.07,
+                            30.67
+                        ],
+                        [
+                            121.47,
+                            31.23
+                        ]
+                    ]
+                },
+                {
+                    "name": "Zhengzhou->Shanghai",
+                    "coords": [
+                        [
+                            113.62,
+                            34.75
+                        ],
+                        [
+                            121.47,
+                            31.23
+                        ]
+                    ]
+                },
+                {
+                    "name": "Wuhan->Zhengzhou",
+                    "coords": [
+                        [
+                            114.31,
+                            30.52
+                        ],
+                        [
+                            113.62,
+                            34.75
+                        ]
+                    ]
+                },
+                {
+                    "name": "Changsha->Zhengzhou",
+                    "coords": [
+                        [
+                            112.93,
+                            28.23
+                        ],
+                        [
+                            113.62,
+                            34.75
+                        ]
+                    ]
+                },
+                {
+                    "name": "Wuhan->Chongqing",
+                    "coords": [
+                        [
+                            114.31,
+                            30.52
+                        ],
+                        [
+                            106.55,
+                            29.57
+                        ]
+                    ]
+                },
+                {
+                    "name": "Xinyang->Chongqing",
+                    "coords": [
+                        [
+                            114.04,
+                            32.07
+                        ],
+                        [
+                            106.55,
+                            29.57
+                        ]
+                    ]
+                },
+                {
+                    "name": "Wuhan->Changsha",
+                    "coords": [
+                        [
+                            114.31,
+                            30.52
+                        ],
+                        [
+                            112.93,
+                            28.23
+                        ]
+                    ]
+                },
+                {
+                    "name": "Xinyang->Changsha",
+                    "coords": [
+                        [
+                            114.04,
+                            32.07
+                        ],
+                        [
+                            112.93,
+                            28.23
+                        ]
+                    ]
+                }
+            ],
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0.01,
+                "type": "dotted",
+                "color": "#F4A460"
+            },
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "",
+                "Main Spread Path"
+            ],
+            "selected": {
+                "": true,
+                "Main Spread Path": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "formatter": function (params) {        return params.name + ' : ' + params.value[2];    },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "title": [
+        {
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 2,
+        "max": 6,
+        "inRange": {
+            "color": [
+                "#50a3ba",
+                "#eac763",
+                "#d94e5d"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "geo": {
+        "map": "china",
+        "roam": true,
+        "emphasis": {}
+    }
+};
+        chart_843e9d47e7034a788cdf866827e4cb26.setOption(option_843e9d47e7034a788cdf866827e4cb26);
+    </script>
+</body>
+</html>
